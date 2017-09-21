@@ -23,12 +23,7 @@ header .hea der -black {
 	background-color: #F89406;
 	height: 41px;
 }
-header .header-black li {
-	background-image: url("../img/c lubs.png");
-	background-repeat: no-repeat;
-	display: inline-block;
-	margin: 4px;
-}
+
 header .header-black li a {
 	width: 32px;
 	height: 32px;
@@ -36,13 +31,13 @@ header .header-black li a {
 }
 header #logotipo {
 	position: absolute;
-	top: 151px;
+	top: 89px;
 	left: -90px;
     height: 91px;
 }
 #logobaixo {
 	    position: absolute;
-    top: -192px;
+    top: -120px;
     left: -17px;
     width: 249px;
 }
@@ -202,6 +197,8 @@ header #logotipo {
 	margin-bottom: 40px;
 	color: #656565;
 	font-size: 17px;
+	top: -98px;
+    position: relative;
 }
 #call-to-action .btn {
 	min-width: 164px;
@@ -359,4 +356,29 @@ footer .list-socials i {
 }
 #listacontato {
 	color: #FFF;
+}
+#papainoel{
+	z-index: -1;
+	top: -27px;
+	position: relative;
+}
+#emcima{
+	z-index: -1;
+}
+                                        <!css do formulario
+                                        
+.logoformulario{
+	 position: relative;
+    width: 52%;
+    z-index: -1;
+    top: -348px;
+    left: 151px;
+}
+.pform {
+	left: 332px;
+    top: 97px;
+    font-family: arial;
+    position: absolute;
+    z-index: 1;
+    font-size: 14px;
 }
