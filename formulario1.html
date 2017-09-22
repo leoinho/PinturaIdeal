@@ -53,35 +53,41 @@
 		<section>
 			<div class="container">
       <span class="borda">
-      <form>
+      <form method="post" action="https://leoinho.github.io/PinturaIdeal/">
+		<input type="hidden" name="redirect" value="">
+		<input name="recipient" value="leoinhosagaz@hotmail.com" type="hidden">
+		<input name="required" value="nome,email,cidade,bairro,lote,telefone,comentário,arquivo" type="hidden">
+		<input type="hidden" name="sort" value="nome,email,cidade,bairro,lote,telefone,comentário,arquivo">
+		<input type="hidden" name="subject" value="Orçamento PinturaIdeal">
+      
       <div id="posição1" class="row">
         <div class="col-md-6 mb-3">
           <label for="validationDefault01">Nome</label>
-          <input type="text" class="form-control" id="validationDefault01" placeholder="digite seu nome" value="" required>
+          <input type="text" name="nome" class="form-control" id="validationDefault01" placeholder="digite seu nome" value="" required>
         </div>
         <div class="col-md-6 mb-3">
           <label for="validationDefault02">Email</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" value="" required>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" value="" required>
         </div>
       </div>
       <div id="posição2" class="row">
         <div class="col-md-6 mb-3">
           <label for="validationDefault03">Cidade</label>
-          <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade onde mora" required>
+          <input type="text" name="didade" class="form-control" id="validationDefault03" placeholder="Cidade onde mora" required>
           <div class="invalid-feedback">
             Please provide a valid city.
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Bairro</label>
-          <input type="text" class="form-control" id="validationDefault04" placeholder="bairro onde mora" required>
+          <input type="text" name="bairro" class="form-control" id="validationDefault04" placeholder="bairro onde mora" required>
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
         </div>
         <div class="col-md-3 mb-3">
           <label for="validationDefault05">Lote/número</label>
-          <input type="text" class="form-control" id="validationDefault05" placeholder="lote/numero da casa" required>
+          <input type="text" name="lote" class="form-control" id="validationDefault05" placeholder="lote/numero da casa" required>
           <div class="invalid-feedback">
             Please provide a valid zip.
 
@@ -91,14 +97,14 @@
       <div id="posição3" class="row">
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Telefone</label>
-          <input type="text" class="form-control" id="validationDefault04" placeholder="Exemplo(xx)xxxxx-xxxx" required>
+          <input type="text" name="telefone" class="form-control" id="validationDefault04" placeholder="Exemplo(xx)xxxxx-xxxx" required>
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
         </div>
         <div class="col-md-3 mb-3" >
           <label for="validationDefault04">Comentário</label>
-          <textarea class="form-control area" id="validationDefault04" placeholder="Exatamente o que deseja" ></textarea>
+          <textarea name="Comentário" class="form-control area" id="validationDefault04" placeholder="Exatamente o que deseja" required></textarea>
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
@@ -107,7 +113,7 @@
         <div id="posição4">
 <div class="form-group">
     <label for="exampleFormControlFile1">Voce pode adicionar uma pasta com as fotos de onde deseja que o serviço seja feito.</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    <input type="file" name="arquivo" class="form-control-file" id="exampleFormControlFile1">
   </div>
       <button class="btn btn-primary" type="submit">Enviar</button>
       </div>
