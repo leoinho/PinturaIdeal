@@ -45,14 +45,16 @@
 			</div>			
 
 		</header>
+			<div>
 			<p class="pform">Fazer seu orçamento gratis é fácil! Preencha todos os campos a baixo, tendo a opção de <br>
 			enviar fotos
 			(este campo é opcional).Em até 24 horas entraremos em contato com você!</p>
+		</div>
 		<section>
 			<div class="container">
       <span class="borda">
       <form>
-      <div class="row">
+      <div id="posição1" class="row">
         <div class="col-md-6 mb-3">
           <label for="validationDefault01">Nome</label>
           <input type="text" class="form-control" id="validationDefault01" placeholder="digite seu nome" value="" required>
@@ -62,7 +64,7 @@
           <input type="email" class="form-control" id="exampleInputEmail1" placeholder="name@example.com" value="" required>
         </div>
       </div>
-      <div class="row">
+      <div id="posição2" class="row">
         <div class="col-md-6 mb-3">
           <label for="validationDefault03">Cidade</label>
           <input type="text" class="form-control" id="validationDefault03" placeholder="Cidade onde mora" required>
@@ -86,6 +88,7 @@
           </div>
         </div>
       </div>
+      <div id="posição3" class="row">
         <div class="col-md-3 mb-3">
           <label for="validationDefault04">Telefone</label>
           <input type="text" class="form-control" id="validationDefault04" placeholder="Exemplo(xx)xxxxx-xxxx" required>
@@ -99,19 +102,22 @@
           <div class="invalid-feedback">
             Please provide a valid state.
           </div>
+          </div>
         </div>
+        <div id="posição4">
 <div class="form-group">
     <label for="exampleFormControlFile1">Voce pode adicionar uma pasta com as fotos de onde deseja que o serviço seja feito.</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1">
   </div>
       <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
     </form>
 
 		</section>
 
 		<footer>
 			
-			<div class="row row-cinza-claro">
+			<div id="rodapeform" class="row row-cinza-claro">
 				
 				<div class="container">
 					
