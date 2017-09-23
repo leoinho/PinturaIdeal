@@ -23,8 +23,10 @@ $Destinatario="leoinhosagaz@hotmail.com";
 
 $Titulo="$titulo";
 
+$mensagem = “Olá sou o”.$nome.” email”.$idade.” moro em”.$Cidade.$bairro.$lote.”meu numero é”
+.$telefone.$comentario.”de uma olhada nas fotos”.$arquivo;
 
-$mensagem1="
+/*$mensagem1="
 
 Uma mensagem vinda do site !
 
@@ -42,7 +44,7 @@ Telefone: $telefone
 
 Email: $email
 
-Mensagem: $comentario";
+Mensagem: $comentario";*//
 
 
 mail("$Destinatario","$Titulo", "$mensagem1","From:$email");
