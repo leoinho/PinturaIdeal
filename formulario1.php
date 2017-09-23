@@ -1,3 +1,64 @@
+<?
+
+$nome=$_POST['nome'];
+
+$email=$_POST['email'];
+
+$titulo=$_POST['titulo'];
+
+$cidade=$_POST['cidade'];
+
+$bairro=$_POST['bairro'];
+
+$lote=$_POST['lote'];
+
+$telefone=$_POST['telefone'];
+
+$comentario=$_POST['comentario'];
+
+$arqueivo=$_POST['arquivo'];
+
+$Destinatario="leoinhosagaz@hotmail.com";
+
+
+$Titulo="$titulo";
+
+
+$mensagem1="
+
+Uma mensagem vinda do site !
+
+Algum vistante mandou essa mensagem pelo site.
+
+Nome: $nome
+
+cidade: $cidade
+
+Bairro: $bairro
+
+Lote/numero: $lote
+
+Telefone: $telefone
+
+Email: $email
+
+Mensagem: $comentario";
+
+
+mail("$Destinatario","$Titulo", "$mensagem1","From:$email");
+
+?>
+
+<html>
+
+<body>
+
+Enviado com sucesso !
+
+</body>
+
+</html>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -59,7 +120,7 @@
 		<input name="required" value="nome,email,cidade,bairro,lote,telefone,comentário,arquivo" type="hidden">
 		<input type="hidden" name="sort" value="nome,email,cidade,bairro,lote,telefone,comentário,arquivo">
 		<input type="hidden" name="subject" value="Orçamento PinturaIdeal">-->
-      <form method="post" action="contato.php">
+      <form method="post" action="leoinhosagaz@mail.com">
       <input type="hidden" name="redirect" value="index.html">
       <div id="posição1" class="row">
         <div class="col-md-6 mb-3">
